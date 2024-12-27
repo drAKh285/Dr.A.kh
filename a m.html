@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="gx.css">
+    <link rel="stylesheet" href="header m.css">
+    <link rel="stylesheet" href="footer m.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            padding: 0px;
+            margin: 0px;
+            background-color: #f4f4f4;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 25px;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 0 10px 24px #646363;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select,
+        button {
+            width: 100%;
+            padding: 10px 5px;
+            margin: 10px 0px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            background-color: #333;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div>
+                <a href="home ahmed khaled.html">
+                    <img src="https://www.roomapp.ae/wp-content/uploads/2024/03/logo.png" alt="loge">
+                </a>
+            </div>
+            <div>
+                <a href="home ahmed khaled.html" class="room-button"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="a m.html" class="room-button active">Booking</a>
+                <a href="index.html" class="room-button"> <i class="fa-solid fa-bed"></i> Room Section</a>
+                <a href="project.html" class="room-button">Offers</a>
+                <a href="hoder11.html" class="room-button"><i class="fa-solid fa-images"></i> Gallery</a>
+                <a href="project11.html" class="room-button"><i class="fa-solid fa-utensils"></i> Dining</a>
+                <a href="eeeeeeee.html" class="room-button">Jops</a>
+                <a href="hn.html" class="room-button">Services</a>
+                <a href="FAQ HTML.html" class="room-button"><i class="fa-solid fa-clipboard-question"></i> FAQ</a>
+                <a href="html123.html" class="room-button"><i class="fa-solid fa-phone"></i> Contact Us</a>
+                <a href="index n.html" class="room-button">About Us</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="form-container">
+        <h2>Reservation Form</h2>
+        <form id="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="guests">Number of people: </label>
+
+            <input type="number" id="guests" name="guests" required min="1" placeholder="Enter the number of people">
+
+            <label for="checkin-date">Check-in date:</ label>
+
+                <input type="date" id="checkin-date" name="checkin-date" required>
+
+                <label for="checkout-date">Checkout Date:</label>
+
+                <input type="date" id="checkout-date" name="checkout-date" required>
+
+                <button type="button" onclick="submitBooking()">Book Now</button>
+
+        </form>
+
+    </div>
+
+    <script>
+        function submitBooking() {
+            // Get the input data
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var guests = document.getElementById('guests').value;
+            var checkinDate = document.getElementById('checkin-date ').value;
+
+            var checkoutDate = document.getElementById('checkout-date').value;
+
+            // Check that all fields are filled in
+            if (name && email && guests && checkinDate && checkoutDate) {
+                // Display a confirmation message
+                alert('Reservation successfully registered!\n\nName: ' + name + '\nEmail: ' + email + '\nNumber of people: ' + guests + '\nCheck-in date: ' + checkinDate + '\nCheck-out date: ' + checkoutDate);
+            } else {
+                alert('Please fill in all fields.');
+            }
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Royal Hotel. All Rights Reserved</p>
+        <div>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-whatsapp"></a>
+        </div>
+        <p>info@royalhotel.com.np</p>
+        <p>C +01010543949 (WhatsApp)</p>
+    </footer>
+</body>
+
+</html>

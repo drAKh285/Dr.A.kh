@@ -1,0 +1,8 @@
+icon line
+---------
+https://fontawesome.com/v6/search?o=r&m=free
+
+
+libraries add in html to display the icon
+-----------------------------------------
+search -> cdn font awesome

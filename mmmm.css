@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  .section {
+    padding: 20px;
+    margin: 10px 0;
+  }
+  
+  
+  .header-image, .benefits-image, .apply-image, .testimonials-image, .training-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+
+  #header {
+    text-align: center;
+    padding: 30px 20px;
+  }
+  #header h1 {
+    font-size: 2.5rem;
+  }
+  
+  
+  #jobs {
+    position: relative;
+    background: url('WhatsApp\ Image\ 2024-12-19\ at\ 21.18.42_e7c5b924.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  
+  
+  #jobs h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .job-card {
+    background: rgba(0, 0, 0, 0.6); 
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.job-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  margin: 5px 0;
+}
+
+
+#benefits {
+  background: #fff;
+}
+
+#benefits ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+
+#apply {
+  background: #f1f1f1;
+}
+
+.btn {
+  display: inline-block;
+  background: #007BFF;
+  color : #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition:background0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+
+#testimonials {
+  background: #f9f9f9;
+  font-style: italic;
+}
+#training {
+  background: #fff;
+}
+
+
+#footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  #jobs h2::before {
+    content: "Jobs"; 
+    font-size: 8rem; /* حجم النص */
+    color: rgba(255, 255, 255, 0.1); 
+    position: absolute;
+    top: 50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 0;
+    white-space: nowrap; 
+  }

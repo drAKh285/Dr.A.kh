@@ -1,0 +1,270 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    line-height: 1.6;
+}
+
+/* header and nav */
+header {
+    color: white;
+    padding: 0px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.nav img{
+    padding: 0;
+    margin-right: 90px;
+    width: 60px;
+
+}
+.nav {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 0 10px;
+}
+
+/* main */
+.main {
+    background: url('https://source.unsplash.com/1600x900/?hotel') no-repeat center center/cover;
+    padding: 50px 20px;
+    text-align: center;
+    color: #575757;
+    
+}
+
+.p1 {
+    color: goldenrod;
+}
+
+.main h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+
+.button:hover {
+    background: cyan;
+}
+
+/* img in the main */
+.main img {
+    margin: 20px 12px;
+    border-radius: 10px;
+    max-width: 30%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    flex-wrap: nowrap;
+}
+
+.main img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+.booking-form{
+align-items: center;
+justify-content: center;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background {
+    background-image: url('Titanic-Mardan-Palace-2-.webp');
+    background-size: cover;
+    background-position: center; 
+    border-radius: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: top;
+    color: white; 
+    text-align: center;
+}
+
+
+
+/* about */
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    font-size: 3em;
+}
+
+/* footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: orangered;
+    color: white;
+}
+
+.fa-instagram {
+    background: darkorchid;
+    color: white;
+}
+
+.fa-linkedin {
+    background: blue;
+    color: white;
+}
+
+.fa-whatsapp {
+    background: green;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .main {
+        padding: 30px 10px;
+    }
+
+    .main h1 {
+        font-size: 2em;
+    }
+
+    .main p {
+        font-size: 1.2em;
+    }
+
+    .button {
+        padding: 8px 16px;
+    }
+
+    .main img {
+        max-width: 80%;
+    }
+
+    .about {
+        padding: 30px 10px;
+    }
+
+    .about h2 {
+        font-size: 2em;
+    }
+
+    .about h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .main {
+        padding: 20px 5px;
+    }
+
+    .main h1 {
+        font-size: 1.5em;
+    }
+
+    .main p {
+        font-size: 1em;
+    }
+
+    .button {
+        padding: 6px 12px;
+    }
+
+    .main img {
+        max-width: 100%;
+    }
+
+    .about {
+        padding: 20px 5px;
+    }
+
+    .about h2 {
+        font-size: 1.5em;
+    }
+}
+
+.about {
+    padding: 20px 5px;
+}
+
+.about h2 {
+    font-size: 1.5em;
+}
+
+.about h3 {
+    font-size: 1.2em;
+}

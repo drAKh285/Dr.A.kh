@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    color: white;
+    padding: 0;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav img {
+    padding: 0;
+    margin-right: 90px;
+    width: 60px;
+}
+
+.nav li {
+    margin: 0 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+#gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+#gallery h1 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook { background: #3B5998; color: white; }
+.fa-twitter { background: #55ACEE; color: white; }
+.fa-google { background: orangered; color: white; }
+.fa-instagram { background: darkorchid; color: white; }
+.fa-linkedin { background: blue; color: white; }
+.fa-whatsapp { background: green; color: white; }
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .main {
+        padding: 30px 10px;
+    }
+
+    .main h1 {
+        font-size: 2em;
+    }
+
+    .main p {
+        font-size: 1.2em;
+    }
+
+    .button {
+        padding: 8px 16px;
+    }
+
+    .main img {
+        max-width: 80%;
+    }
+
+    .about {
+        padding: 30px 10px;
+    }
+
+    .about h2 {
+        font-size: 2em;
+    }
+
+    .about h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .main {
+        padding: 20px 5px;
+    }
+
+    .main h1 {
+        font-size: 1.5em;
+    }
+
+    .main p {
+        font-size: 1em;
+    }
+
+    .button {
+        padding: 6px 12px;
+    }
+
+    .main img {
+        max-width: 100%;
+    }
+
+    .about {
+        padding: 20px 5px;
+    }
+
+    .about h2 {
+        font-size: 1.5em;
+    }
+}
